@@ -12,7 +12,7 @@
     不支持 HTML5 video。
 </video>
 <script>
-document.getElementById("myVideo").onloadedmetadata = function() {myFunction()};
+document.getElementById("myVideo").onloadedmetadata = function() {alert(document.getElementById("myVideo").videoWidth);myFunction()};
 function myFunction() {
     alert("video");
 }
