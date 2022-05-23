@@ -3,20 +3,26 @@
 <head>
 <meta charset="utf-8">
 <title>ttt</title>
+<style>
+    button {
+    width: 200px;
+    height: 50px;
+}
+
+.flex {
+   display: flex;
+}
+
+.flex-center {
+   justify-content: center;
+}
+</style>
 </head>
 <body> 
 
-<p>onloadedmetadata</p>
-<video controls id="myVideo">
-    <source src="gg.mp4" type="video/mp4">
-    不支持 HTML5 video。
-</video>
-<script>
-document.getElementById("myVideo").onloadedmetadata = function() {alert(document.getElementById("myVideo").videoWidth);myFunction()};
-function myFunction() {
-    alert("video");
-}
-</script>
+<button>text</button>
+<button class="flex">text</button>
+<button class="flex flex-center">text</button>
 
 </body> 
 </html>
